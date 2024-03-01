@@ -18,22 +18,22 @@ export default function Home() {
         <section className={styles.section}>
           <h2 className={styles.h2}>How it <span className={styles.chunk}>works</span></h2>
           <div>
-            <h3>Step 1</h3>
-            <p>
+            <h3 className={styles.h3_guide}>Step 1</h3>
+            <p className={styles.guide}>
               <strong>Choose your preferences.</strong> This is your chance to
               tell us what you love.
             </p>
           </div>
           <div>
-            <h3>Step 2</h3>
-            <p>
+            <h3 className={styles.h3_guide}>Step 2</h3>
+            <p className={styles.guide}>
               <strong>Box curation.</strong> Our experts choose premium cannabis
               products just for you!
             </p>
           </div>
           <div>
-            <h3>Step 3</h3>
-            <p>
+            <h3 className={styles.h3_guide}>Step 3</h3>
+            <p className={styles.guide}>
               <strong>Deliver to your door.</strong> Enjoy a new exciting
               experience every month.
             </p>

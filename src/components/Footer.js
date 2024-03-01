@@ -7,7 +7,7 @@ const Footer = () => {
     <footer>
         <div className={styles.footer}>
         Footer is here
-        <h3>Questions? We'd love to hear from you!</h3>
+        <h3>Questions? We&apos;d love to hear from you!</h3>
         <p>Contact us at hello@palybox.com</p>
         <div>
             <div>TikTok</div>

@@ -8,6 +8,7 @@
   .h2 {
     font-family: var(--secondary-poppins);
     font-size: 3.5rem;
+    color: var(--secondary-green);
     text-transform: uppercase;
   }
 
@@ -76,6 +77,17 @@
   .hero {
     background-color: var(--secondary-lime);
   }
+}
+
+.guide {
+  color: var(--primary-orange);
+}
+
+.h3_guide {
+  font-family: var(--primary-noto);
+  font-size: 2rem;
+  color: var(--secondary-green);
+
 }
 
 .code {

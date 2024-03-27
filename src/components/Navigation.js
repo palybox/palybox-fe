@@ -5,9 +5,20 @@ import Link from "next/link";
 const Navigation = () => {
   return (
     <nav>
-      <div style={{ backgroundColor: "white" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          backgroundColor: "white",
+        }}
+      >
         <Link href="/">
-        <Image src="/logo.png" width={300} height={200} style={{objectFit: "contain"}}></Image>
+          <Image
+            src="/logo.png"
+            width={300}
+            height={200}
+            style={{ objectFit: "contain" }}
+          ></Image>
         </Link>
       </div>
     </nav>

@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
+  max-width: 100vw;
 
   .h2 {
     font-family: var(--secondary-poppins);
@@ -20,6 +21,7 @@
     font-family: var(--primary-noto);
     font-size: 3rem;
     color: var(--secondary-green);
+    text-align: center;
   }
 
   .h3 .highlight {
@@ -32,6 +34,8 @@
     color: var(--primary-orange);
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
     } 
 }
 
@@ -42,6 +46,11 @@
   height: 70vh;
   margin-bottom: 0%;
   padding-top: 2rem;
+}
+
+.centeredDiv {
+  display: flex;
+  justify-content: center;
 }
 
 .description {
@@ -72,32 +81,136 @@
 }
 
 .section {
-  height: 90vh;
+  min-height: 90vh;
   width: 100%;
-  margin-bottom: 1rem;
-  .hero {
-    background-color: var(--secondary-lime);
-  }
+}
+
+.section p {
+  font-family: var(--secondary-poppins);
+  font-size: 1.2em;
+  padding-bottom: 1.6em;
 }
 
 .heroSection {
   background-color: var(--secondary-lime);
-  padding: 10% 15%;
+  padding: 15% 15%;
 }
 
 .worksSection {
   background-color: white;
+  padding: 5% 0;
 }
 
-.guide {
-  color: var(--primary-orange);
+.worksSection h2 {
+  text-align: center;
 }
 
-.h3_guide {
+.howTo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5em;
+  margin: 5em;
+}
+
+.steps h3 {
   font-family: var(--primary-noto);
   font-size: 2rem;
   color: var(--secondary-green);
+  margin-bottom: 0.5em;
+}
 
+.steps p {
+  color: var(--primary-orange);
+  text-align: center;
+}
+
+.aboutSection{
+  background-color: var(--primary-orange);
+  color: white;
+}
+
+.aboutSection h2 {
+  font-family: var(--secondary-poppins);
+  font-weight: bold;
+  color: var(--secondary-green);
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.empha {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.aboutSection h3 {
+  font-family: var(--secondary-poppins);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-bottom: 2em;
+}
+
+.aboutBrand {
+  width: 65vw;
+  padding: 2em 0em;
+
+}
+
+.kitSection {
+  padding: 10% 15%;
+}
+
+.kitSection h3 {
+  padding: 2em 0em;
+}
+
+.kitSection h4 {
+  font-family: var(--secondary-poppins);
+  color: white;
+  background-color: var(--secondary-green);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1em 0em;
+}
+
+.formContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  width: 120%;
+  height: 2em;
+}
+
+.inputField {
+  font-family: var(--secondary-poppins);
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  padding-left: 50px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+}
+
+.button {
+  font-family: var(--secondary-poppins);
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-orange);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+/* Change button color on hover */
+.button:hover {
+  background-color: #0056b3;
 }
 
 .code {
@@ -110,10 +223,6 @@
   grid-template-columns: repeat(4, minmax(25%, auto));
   max-width: 100%;
   width: var(--max-width);
-}
-
-.steps {
-  display: inline-block;
 }
 
 .socialWrapper{
@@ -186,6 +295,7 @@
 .logo {
   position: relative;
 }
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {

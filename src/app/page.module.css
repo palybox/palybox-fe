@@ -31,6 +31,7 @@
     font-family: var(--secondary-poppins);
     color: var(--primary-orange);
     text-transform: uppercase;
+    font-weight: bold;
     } 
 }
 
@@ -79,6 +80,15 @@
   }
 }
 
+.heroSection {
+  background-color: var(--secondary-lime);
+  padding: 10% 15%;
+}
+
+.worksSection {
+  background-color: white;
+}
+
 .guide {
   color: var(--primary-orange);
 }
@@ -100,6 +110,18 @@
   grid-template-columns: repeat(4, minmax(25%, auto));
   max-width: 100%;
   width: var(--max-width);
+}
+
+.steps {
+  display: inline-block;
+}
+
+.socialWrapper{
+  padding-top: 2em;
+}
+
+.socialIcons {
+  border-radius: 50%;
 }
 
 .card {

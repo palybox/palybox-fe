@@ -8,40 +8,53 @@ export default function Home() {
     <main className={styles.main}>
       <div>
         <Navigation />
-        <section className={styles.section}>
+        <section className={`${styles.section} ${styles.heroSection}`}>
           <h5 className={styles.h5}>Conciously curated cannabis</h5>
           <h3 className={styles.h3}>
             Reclaim, control over your cannabis experience with our{" "}
             <span className={styles.highlight}>monthly</span> curated boxes.
           </h3>
         </section>
-        <section className={styles.section}>
-          <h2 className={styles.h2}>How it <span className={styles.chunk}>works</span></h2>
-          <div>
+        <section className={`${styles.section} ${styles.worksSection}`}>
+          <h2 className={styles.h2}>
+            How it <span className={styles.chunk}>works</span>
+          </h2>
+          <div className={styles.steps}>
+            <div>
+              <Image src="/steps/01-inquiry.svg" width={500} height={200} style={{objectFit: "contain"}}></Image>
+            </div>
             <h3 className={styles.h3_guide}>Step 1</h3>
             <p className={styles.guide}>
-              <strong>Choose your preferences.</strong> This is your chance to
+              <strong>Choose your preferences.</strong><br></br>This is your chance to
               tell us what you love.
             </p>
           </div>
           <div>
+            <div>
+              <Image src="/steps/02-box.svg" width={500} height={200} style={{objectFit: "contain"}}></Image>
+            </div>
             <h3 className={styles.h3_guide}>Step 2</h3>
             <p className={styles.guide}>
-              <strong>Box curation.</strong> Our experts choose premium cannabis
+              <strong>Box curation.</strong><br></br>Our experts choose premium cannabis
               products just for you!
             </p>
           </div>
           <div>
+            <div>
+              <Image src="/steps/03-delivery.svg" width={500} height={200} style={{objectFit: "contain"}}></Image>
+            </div>
             <h3 className={styles.h3_guide}>Step 3</h3>
             <p className={styles.guide}>
-              <strong>Deliver to your door.</strong> Enjoy a new exciting
+              <strong>Deliver to your door.</strong><br></br>Enjoy a new exciting
               experience every month.
             </p>
           </div>
         </section>
-        <section className={styles.section}>Image</section>
+        <section className={styles.section}><div className=""><Image></Image></div></section>
         <section className={styles.section}>
-          <h2 className={styles.h2}><span className={styles.chunk}>Trusted</span> Partners</h2>
+          <h2 className={styles.h2}>
+            <span className={styles.chunk}>Trusted</span> Partners
+          </h2>
           <div>
             <h3 className={styles.h3}>
               We are proudly partnereed with leading{" "}

@@ -40,12 +40,46 @@
 }
 
 .footer {
+  position: relative;
   background-color: var(--secondary-green);
   color: white;
   width: 100vw;
   height: 70vh;
   margin-bottom: 0%;
   padding-top: 2rem;
+  overflow: hidden;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.footerLogo {
+  transform: translate(-30%, -10%) rotate(15deg);
+}
+
+.footerInfo {
+  padding-top: 70px;
+}
+
+.footerInfo h3 {
+  font-family: var(--secondary-poppins);
+  font-size: 2em;
+  padding-bottom: 1.6em;
+}
+
+.footerInfo p {
+  font-family: var(--secondary-poppins);
+  font-size: 1.7em;
+  padding-bottom: 1.6em;
+}
+
+.footerHand {
+  position: absolute;
+  right: 0;
+  bottom: -20%;
+  transform: translate(10%, 0%);
 }
 
 .centeredDiv {
@@ -53,21 +87,42 @@
   justify-content: center;
 }
 
-.sixtyDiv {
-  width: 60vw;
+.heroGrid{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 0.25fr 1fr 0.25fr;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  padding: 0px 10em;
 }
 
-.subHeadingStripe {
-  width: 100vw;
-  margin-bottom: 50px;
+.posOne {
+  grid-column: 1;
+  transform: rotate(-15deg);
+}
+
+.posTwo {
+  grid-column: 3;
+  transform: rotate(15deg);  
 }
 
 .subHeadingStripePurp {
   background-color: var(--primary-purple);
+  margin-bottom: 3em;
 }
 
 .subHeadingStripeLime {
   background-color: var(--secondary-lime);
+  margin-bottom: 3em;
+}
+
+.paddingLeft {
+  padding-left: 6em;
+}
+
+.paddingRight {
+  padding-right: 6em;
 }
 
 .description {
@@ -104,17 +159,22 @@
 
 .section p {
   font-family: var(--secondary-poppins);
-  font-size: 1.5em;
+  font-size: 1.7em;
   padding-bottom: 1.6em;
 }
 
 .heroSection {
   background-color: var(--secondary-lime);
-  padding: 15% 15%;
+  padding: 10% 15% 0%;
+}
+
+.heroText {
+  margin-bottom: 10em;
 }
 
 .worksSection {
-  background-color: white;
+  background: white url('../../public/media/Mountians.svg') no-repeat center center;
+  background-size: cover;
   padding: 5% 0;
 }
 
@@ -146,6 +206,7 @@
 }
 
 .partnerHeading {
+  position: relative;
   background-color: var(--primary-orange);
   margin-bottom: 50px;
   border-radius: 15px;
@@ -156,6 +217,19 @@
   font-size: 3.5rem;
   text-transform: uppercase;
   color: white;
+}
+
+.crossPos {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
 }
 
 .aboutSection{
@@ -172,6 +246,10 @@
   font-size: 3em;
 }
 
+.ajaPort {
+  transform: translate(0%, -20%) rotate(15deg);
+}
+
 .empha {
   font-weight: 500;
   font-style: italic;
@@ -186,7 +264,12 @@
 }
 
 .aboutBrand {
-  padding: 2em 0em;
+  grid-column: 2 / span 2;
+}
+
+.aboutFounder {
+  grid-column: 1 / span 2;
+  padding-top: 5em;
 }
 
 .kitSection {
@@ -197,14 +280,45 @@
   padding: 2em 0em;
 }
 
-.kitSection h4 {
+.kitHeading {
+  position: relative;
+  
   font-family: var(--secondary-poppins);
+  text-align: center;
+  text-transform: uppercase;
+
   color: white;
   background-color: var(--secondary-green);
-  text-transform: uppercase;
-  text-align: center;
+  width: 50vw;
   padding: 1em 0em;
-  width: 66%;
+}
+
+.fiveStarPos {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heartPos {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.greenStarPosOne {
+  position: absolute;
+  right: 0;
+  transform: translate(50%, -50%);
+  z-index: -1;
+}
+
+.greenStarPosTwo {
+  position: absolute;
+  left: 0;
+  transform: translate(-35%, 25%);
+  z-index: -1;
 }
 
 .formContainer {
@@ -228,6 +342,7 @@
   border-radius: var(--border-radius);
   box-sizing: border-box;
   background-color: white;
+  color: black;
 }
 
 .button {

@@ -36,7 +36,9 @@ export default function Home() {
             </form>
           </div>
         </section>
-        <section className={`${styles.section} ${styles.worksSection} ${styles.wavyTop}`}>
+        <section
+          className={`${styles.section} ${styles.worksSection} ${styles.wavyTop}`}
+        >
           <h2 className={styles.h2}>
             How it <span className={styles.chunk}>works</span>
           </h2>
@@ -94,54 +96,71 @@ export default function Home() {
             <img src="/media/billboard.jpg" width="100%"></img>
           </div>
         </section>
-        <section className={styles.section}>
-          <h2 className={styles.h2}>
-            <span className={styles.chunk}>Trusted</span> Partners
-          </h2>
+        <section className={`${styles.section} ${styles.partnerSection}`}>
+          <div className={`${styles.partnerHeading} ${styles.centeredDiv}`}>
+            <h2>
+              <span className={styles.chunk}>Trusted</span> Partners
+            </h2>
+          </div>
           <div>
             <h3 className={styles.h3}>
-              We are proudly partnereed with leading{" "}
+              We are proudly partnered with leading{" "}
               <span className={styles.highlight}>cannabis brands</span> and{" "}
               <span className={styles.highlight}>growers</span> in Colorado.
             </h3>
           </div>
         </section>
         <section className={`${styles.section} ${styles.aboutSection}`}>
-          <h2>
-            About the <span className={styles.empha}>Brand</span>
-          </h2>
-          <div className={styles.aboutBrand}>
-            <h3>Quality. Inclusivity. Education.</h3>
-            <p>
-              At Paly, we aim to provide an unparalleled cannabis experience by
-              delivering top-tier products directly to your doorstep.
-            </p>
-            <p>
-              <strong>
-                We envision a future where quality cannabis is available,
-                accessible, and enjoyed by all.
-              </strong>
-            </p>
+          <div
+            className={`${styles.subHeadingStripe} ${styles.subHeadingStripeLime}`}
+          >
+            <h2>
+              About the <span className={styles.empha}>Brand</span>
+            </h2>
           </div>
-          <h2>
-            About the <span className={styles.empha}>Founder</span>
-          </h2>
-          <h3>Aja Palmino</h3>
-          <div>
-            <p>
-              Aja is a pioneer in the cannabis space with over a decade of
-              experience in the industry.
-            </p>
-            <p>
-              <strong>
-                She is passionate about incorporating a more empathetic approach
-                to cannabis so that there is a restored faith in the industry.
-              </strong>
-            </p>
+          <div className={`${styles.aboutBrand} ${styles.sixtyDiv}`}>
+            <div>
+              <h3>Quality. Inclusivity. Education.</h3>
+              <p>
+                At Paly, we aim to provide an unparalleled cannabis experience
+                by delivering top-tier products directly to your doorstep.
+              </p>
+              <p>
+                <strong>
+                  We envision a future where quality cannabis is available,
+                  accessible, and enjoyed by all.
+                </strong>
+              </p>
+            </div>
+          </div>
+          <div
+            className={`${styles.subHeadingStripe} ${styles.subHeadingStripePurp}`}
+          >
+            <h2>
+              About the <span className={styles.empha}>Founder</span>
+            </h2>
+          </div>
+          <div className={`${styles.aboutFounder} ${styles.sixtyDiv}`}>
+            <div>
+              <h3>Aja Palmino</h3>
+              <p>
+                Aja is a pioneer in the cannabis space with over a decade of
+                experience in the industry.
+              </p>
+              <p>
+                <strong>
+                  She is passionate about incorporating a more empathetic
+                  approach to cannabis so that there is a restored faith in the
+                  industry.
+                </strong>
+              </p>
+            </div>
           </div>
         </section>
         <section className={`${styles.section} ${styles.kitSection}`}>
-          <h4>Stay in our loop</h4>
+          <div className={styles.centeredDiv}>
+            <h4>Stay in our loop</h4>
+          </div>
           <h3 className={styles.h3}>
             We want to get to know{" "}
             <span className={styles.highlight}>you!</span>

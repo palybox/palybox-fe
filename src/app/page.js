@@ -15,6 +15,7 @@ export default function Home() {
                 src="/icons/Cannabis Jar.svg"
                 width={250}
                 height={250}
+                alt="Icon of a medicine jar"
               ></Image>
             </div>
             <div className={styles.posTwo}>
@@ -22,6 +23,7 @@ export default function Home() {
                 src="/icons/White Box.svg"
                 width={250}
                 height={250}
+                alt="Icon of a package with the Paly log on it"
               ></Image>
             </div>
           </div>
@@ -68,6 +70,7 @@ export default function Home() {
                   width={200}
                   height={200}
                   style={{ objectFit: "contain" }}
+                  alt="Icon to illustrate the step"
                 ></Image>
               </div>
               <h3 className={styles.h3}>Step 1</h3>
@@ -83,6 +86,7 @@ export default function Home() {
                   width={200}
                   height={200}
                   style={{ objectFit: "contain" }}
+                  alt="Icon to illustrate the step"
                 ></Image>
               </div>
               <h3 className={styles.h3}>Step 2</h3>
@@ -99,6 +103,7 @@ export default function Home() {
                   width={200}
                   height={200}
                   style={{ objectFit: "contain" }}
+                  alt="Icon to illustrate the step"
                 ></Image>
               </div>
               <h3 className={styles.h3}>Step 3</h3>
@@ -120,7 +125,7 @@ export default function Home() {
               <span className={styles.chunk}>Trusted</span> Partners
             </h2>
             <div className={styles.crossPos}>
-              <Image src="/icons/Cross.svg" width={200} height={200}></Image>
+              <Image src="/icons/Cross.svg" width={200} height={200} alt="Iconof a green medical cross"></Image>
             </div>
           </div>
           <div>
@@ -187,19 +192,20 @@ export default function Home() {
             </div>
             <div className={styles.ajaPort}>
               <Image
-                src="/media/Aja MAsk.png"
+                src="/media/Aja Mask.png"
                 width={700}
                 height={700}
+                alt="Portrait of the founder, Aja Palomino"
                 ></Image>
             </div>
           </div>
         </section>
         <section className={`${styles.section} ${styles.kitSection}`}>
           <div className={styles.greenStarPosOne}>
-            <Image src="/media/7-green.svg" width={700} height={700}></Image>
+            <Image src="/media/7-green.svg" width={700} height={700} alt="Icon of a green wavy star"></Image>
           </div>
           <div className={styles.greenStarPosTwo}>
-            <Image src="/media/7-green.svg" width={700} height={700}></Image>
+            <Image src="/media/7-green.svg" width={700} height={700} alt="Icon of a green wavy star"></Image>
           </div>
           <div className={styles.centeredDiv}>
             <div className={styles.kitHeading}>
@@ -209,6 +215,7 @@ export default function Home() {
                   width={150}
                   height={150}
                   style={{ objectFit: "contain" }}
+                  alt="Icon of a green wavy star"
                 ></Image>
               </div>
               <h4>Stay in our loop</h4>
@@ -218,6 +225,7 @@ export default function Home() {
                   width={150}
                   height={150}
                   style={{ objectFit: "contain" }}
+                  alt="Icon of a heart"
                 ></Image>
               </div>
             </div>

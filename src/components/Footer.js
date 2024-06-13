@@ -23,31 +23,31 @@ const Footer = () => {
             </div>
             <div className={styles.socialWrapper}>
               <Link href="https://" className={styles.socialIcons}>
-                <Image src="/social/tiktok.svg" width="50" height="50"></Image>
+                <Image src="/social/Tiktok.svg" width={50} height={50}></Image>
               </Link>
               <Link href="https://" className={styles.socialIcons}>
                 <Image
-                  src="/social/instagram.svg"
-                  width="50"
-                  height="50"
+                  src="/social/Instagram.svg"
+                  width={50}
+                  height={50}
                 ></Image>
               </Link>
               <Link href="https://" className={styles.socialIcons}>
                 <Image
-                  src="/social/facebook.svg"
-                  width="50"
-                  height="50"
+                  src="/social/Facebook.svg"
+                  width={50}
+                  height={50}
                 ></Image>
               </Link>
               <Link href="https://" className={styles.socialIcons}>
                 <Image
-                  src="/social/linkedin.svg"
-                  width="50"
-                  height="50"
+                  src="/social/LinkedIn.svg"
+                  width={50}
+                  height={50}
                 ></Image>
               </Link>
               <Link href="https://" className={styles.socialIcons}>
-                <Image src="/social/youtube.svg" width="50" height="50"></Image>
+                <Image src="/social/Youtube.svg" width={50} height={50}></Image>
               </Link>
             </div>
             <div className={styles.footerHand}>

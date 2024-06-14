@@ -23,14 +23,14 @@ export default function Home() {
                 src="/icons/White Box.svg"
                 width={250}
                 height={250}
-                alt="Icon of a package with the Paly log on it"
+                alt="Icon of a package with the Paly logo on it"
               ></Image>
             </div>
           </div>
           <h5 className={styles.h5}>Conciously curated cannabis</h5>
           <div className={styles.heroText}>
             <h3 className={styles.h3}>
-              Reclaim, control over your cannabis experience with our{" "}
+              Reclaim control over your cannabis experience with our{" "}
               <span className={styles.highlight}>monthly</span> curated boxes.
             </h3>
           </div>
@@ -125,7 +125,12 @@ export default function Home() {
               <span className={styles.chunk}>Trusted</span> Partners
             </h2>
             <div className={styles.crossPos}>
-              <Image src="/icons/Cross.svg" width={200} height={200} alt="Iconof a green medical cross"></Image>
+              <Image
+                src="/icons/Cross.svg"
+                width={200}
+                height={200}
+                alt="Icon of a green medical cross"
+              ></Image>
             </div>
           </div>
           <div>
@@ -196,16 +201,26 @@ export default function Home() {
                 width={700}
                 height={700}
                 alt="Portrait of the founder, Aja Palomino"
-                ></Image>
+              ></Image>
             </div>
           </div>
         </section>
         <section className={`${styles.section} ${styles.kitSection}`}>
           <div className={styles.greenStarPosOne}>
-            <Image src="/media/7-green.svg" width={700} height={700} alt="Icon of a green wavy star"></Image>
+            <Image
+              src="/media/7-green.svg"
+              width={700}
+              height={700}
+              alt="Icon of a green wavy star"
+            ></Image>
           </div>
           <div className={styles.greenStarPosTwo}>
-            <Image src="/media/7-green.svg" width={700} height={700} alt="Icon of a green wavy star"></Image>
+            <Image
+              src="/media/7-green.svg"
+              width={700}
+              height={700}
+              alt="Icon of a green wavy star"
+            ></Image>
           </div>
           <div className={styles.centeredDiv}>
             <div className={styles.kitHeading}>

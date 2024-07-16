@@ -1,49 +1,39 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
-  max-width: 100vw;
-  overflow-x: hidden;
-
-  .h2 {
-    font-family: var(--secondary-poppins);
-    font-size: 3.5rem;
-    color: var(--secondary-green);
-    text-transform: uppercase;
-  }
-
-  .h2 .chunk {
-    font-family: var(--supporting-retro);
-    text-transform: capitalize;
-    font-size: 2.2em;
-    line-height: 0.5em;
-    font-weight: normal;
-    padding-top: 100px;
-  }
-
-  .h3 {
-    font-family: var(--primary-noto);
-    font-size: 3.6rem;
-    color: var(--secondary-green);
-    text-align: center;
-  }
-
-  .h3 .highlight {
-    font-weight: 400;
-    font-style: italic;
-  }
-
-  .h5 {
-    font-family: var(--secondary-poppins);
-    color: var(--primary-orange);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.2em;
-    text-align: center;
-    } 
+.h2 {
+  font-family: var(--secondary-poppins);
+  font-size: 3.5rem;
+  color: var(--secondary-green);
+  text-transform: uppercase;
 }
+
+.h2 .chunk {
+  font-family: var(--supporting-retro);
+  text-transform: capitalize;
+  font-size: 2.2em;
+  line-height: 0.5em;
+  font-weight: normal;
+  padding-top: 100px;
+}
+
+.h3 {
+  font-family: var(--primary-noto);
+  font-size: 3.6rem;
+  color: var(--secondary-green);
+  text-align: center;
+}
+
+.h3 .highlight {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.h5 {
+  font-family: var(--secondary-poppins);
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  } 
 
 .footerGrid {
   display: grid;
@@ -91,7 +81,7 @@
   justify-content: center;
 }
 
-.heroGrid{
+.heroGrid {
   position: absolute;
   display: grid;
   grid-template-columns: 0.25fr 1fr 0.25fr;
@@ -99,6 +89,7 @@
   left: 0;
   width: 100%;
   padding: 0px 10em;
+  overflow: hidden;
 }
 
 .posOne {
@@ -119,51 +110,26 @@
   padding-right: 6em;
 }
 
-.section {
-  min-height: 90vh;
-  width: 100%;
-  max-width: 100vw;
-  overflow: hidden;
-}
-
-.section p {
-  font-family: var(--secondary-poppins);
-  font-size: 1.7em;
-  padding-bottom: 1.6em;
-}
-
-.section ol,
-.section ul {
-  font-family: var(--secondary-poppins);
-}
-
-.section li {
-  margin-bottom: 10px;
-}
-
-.sectionImg {
-  width: 100%;
-  max-width: 100vw;
-  overflow: hidden;
-  margin-bottom: -10px;
-}
-
-.heroSection {
+.hero {
   background-color: var(--secondary-lime);
   padding: 10% 15% 0%;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .heroText {
   margin-bottom: 10em;
 }
 
-.worksSection {
-  background: white url('../../public/media/Mountians.svg') no-repeat center center;
+.works {
+  background: white;
   background-size: cover;
   padding: 5% 0;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
-.worksSection h2 {
+.works h2 {
   text-align: center;
 }
 
@@ -188,6 +154,8 @@
 
 .partnerSection {
   padding: 10% 15% 0em;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .partnerHeading {
@@ -223,7 +191,9 @@
 .gallery img {
   height: 100%;
   width: 100%;
-  margin-bottom: 0px;
+  max-width: 100vw;
+  overflow: hidden;
+  margin-bottom: -10px;
 }
 
 .about {
@@ -232,7 +202,7 @@
   padding: 10% 2em;
 }
 
-.aboutSection h2 {
+.about h2 {
   font-family: var(--secondary-poppins);
   font-weight: bold;
   color: var(--secondary-green);
@@ -245,17 +215,13 @@
   font-style: italic;
 }
 
-.aboutSection h3 {
+.about h3 {
   font-family: var(--secondary-poppins);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5em;
   padding-bottom: 2em;
-}
-
-.aboutFounder {
-  grid-column: 1 / span 2;
-  padding-top: 5em;
+  max-width: 100vw;
 }
 
 .kitSection {
@@ -265,10 +231,15 @@
 
 .kitSection h3 {
   padding: 2em 0em;
+  height: 50px;
+
 }
 
 .kitHeading {
   position: relative;
+
+  height: 60px;
+  width: 50vw;
   
   font-family: var(--secondary-poppins);
   text-align: center;
@@ -276,8 +247,7 @@
 
   color: white;
   background-color: var(--secondary-green);
-  width: 50vw;
-  padding: 1em 0em;
+
 }
 
 .fiveStarPos {
@@ -351,20 +321,9 @@
   background-color: #0056b3;
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: 100%;
-  width: var(--max-width);
-}
-
 .socialWrapper{
-  padding-top: 2em;
+  padding: 2em 0em;
+  margin-bottom: 5em;
 }
 
 .socialIcons {
@@ -427,28 +386,12 @@
 
 /* Mobile */
 @media (max-width: 700px) {
-  .main {    
-    .h2 {
-      font-size: 2.5em;
-    }
-  
-    .h2 .chunk {
-      font-size: 2.2em;
-      line-height: 0.5em;
-    }
-  
-    .h3 {
-      font-size: 2rem;
-    }
-  
-    .h5 {
-      font-size: 1.2em;
-      } 
+  .h2 {
+    font-size: 2.5rem;
   }
 
-  .section p {
-    font-size: 1em;
-    padding-bottom: 1.1em;
+  .h3 {
+    font-size: 2.5rem;
   }
 
   .heroSection {
@@ -462,6 +405,10 @@
   .heroText {
     margin-top: 3em;
     margin-bottom: 3em;
+  }
+
+  .heroText .h3 {
+    font-size: 2rem;
   }
 
   .posOne img,
@@ -482,6 +429,10 @@
     margin: 2em;
   }
 
+  .steps p {
+    font-size: 1.1em;
+  }
+
   .greenStarPosOne img,
   .greenStarPosTwo img {
     width: 350px;
@@ -497,10 +448,10 @@
   }
 
   .kitSection h3 {
-    padding: 4em 0em;
+    padding: 1em 0em;
   }
 
-  .worksSection {
+  .works {
     background: white;
     padding-top: 4em;
   }
@@ -516,7 +467,7 @@
 
   .footerInfo {
     padding-top: 0px;
-    margin-bottom: 700px;
+    margin-bottom: 100px;
   }
 
   .footerHand {

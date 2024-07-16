@@ -22,31 +22,31 @@ const Footer = () => {
               </p>
             </div>
             <div className={styles.socialWrapper}>
-              <Link href="https://" className={styles.socialIcons}>
+              <Link href="https://tiktok.com" target="_blank" className={styles.socialIcons}>
                 <Image src="/social/Tiktok.svg" width={50} height={50}></Image>
               </Link>
-              <Link href="https://" className={styles.socialIcons}>
+              <Link href="https://instagram.com" target="_blank" className={styles.socialIcons}>
                 <Image
                   src="/social/Instagram.svg"
                   width={50}
                   height={50}
                 ></Image>
               </Link>
-              <Link href="https://" className={styles.socialIcons}>
+              <Link href="https://facebook.com" target="_blank" className={styles.socialIcons}>
                 <Image
                   src="/social/Facebook.svg"
                   width={50}
                   height={50}
                 ></Image>
               </Link>
-              <Link href="https://" className={styles.socialIcons}>
+              <Link href="https://linkedin.com" target="_blank" className={styles.socialIcons}>
                 <Image
                   src="/social/LinkedIn.svg"
                   width={50}
                   height={50}
                 ></Image>
               </Link>
-              <Link href="https://" className={styles.socialIcons}>
+              <Link href="https://youtube.com" target="_blank" className={styles.socialIcons}>
                 <Image src="/social/Youtube.svg" width={50} height={50}></Image>
               </Link>
             </div>

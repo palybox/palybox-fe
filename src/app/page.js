@@ -137,7 +137,7 @@ export default function Home() {
           </div>
           <div></div>
         </section> */}
-      <section className={`${styles.about}`}>
+      <section className={styles.about}>
         <div>
           <h2>We believe you deserve better.</h2>
           <div>
@@ -178,7 +178,8 @@ export default function Home() {
         </div>
       </section>
       <section className={`${styles.kitSection}`}>
-        {/*           <div className={styles.greenStarPosOne}>
+        <div className={styles.kitBg}>
+          <div className={styles.greenStarPosOne}>
             <Image
               src="/media/7-green.svg"
               width={700}
@@ -193,7 +194,8 @@ export default function Home() {
               height={700}
               alt="Icon of a green wavy star"
             ></Image>
-          </div> */}
+          </div>
+        </div>
         <div className={styles.centeredDiv}>
           <div className={styles.kitHeading}>
             <div className={styles.fiveStarPos}>
@@ -220,7 +222,7 @@ export default function Home() {
         <h3 className={styles.h3}>
           We want to get to know <span className={styles.highlight}>you!</span>
         </h3>
-        <div className={styles.centeredDiv}>
+        <div className={`${styles.centeredDiv} ${styles.marginized}`}>
           <form className={styles.formContainer}>
             <input
               type="text"

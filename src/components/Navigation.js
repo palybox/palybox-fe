@@ -1,17 +1,15 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
+import styles from "../app/page.module.css"
 
 const Navigation = () => {
   return (
     <nav>
       <Link href="/">
-        <Image
+        <img
+          className={styles.paly}
           src="/logo.png"
-          width={300}
-          height={200}
-          style={{ objectFit: "contain" }}
-        ></Image>
+        ></img>
       </Link>
     </nav>
   );

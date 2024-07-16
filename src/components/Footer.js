@@ -9,7 +9,7 @@ const Footer = () => {
       <div className={styles.footer}>
         <div className={styles.footerGrid}>
           <div className={styles.footerLogo}>
-            <Image src="/media/Logomark1.png" width={800} height={800}></Image>
+            <Image src="/media/Logomark1.png" alt="palybox logo" width={800} height={800}></Image>
           </div>
           <div className={styles.footerInfo}>
             <div>
@@ -50,10 +50,10 @@ const Footer = () => {
                 <Image src="/social/Youtube.svg" width={50} height={50}></Image>
               </Link>
             </div>
-            <div className={styles.footerHand}>
-              <Image src="/media/Hand.svg" width={500} height={500}></Image>
-            </div>
           </div>
+          <div className={styles.footerHand}>
+              <Image src="/media/Hand.svg" alt="hang loose hand" width={500} height={500}></Image>
+            </div>
         </div>
       </div>
     </footer>

@@ -116,7 +116,7 @@ export default function Home() {
         </section>
         <section className={`${styles.sectionImg}`}>
           <div className={styles.gallery}>
-            <img src="/media/billboard.jpg"></img>
+            <img src="/media/billboard.jpg" alt="palybox billboard"></img>
           </div>
         </section>
         {/* <section className={`${styles.section} ${styles.partnerSection}`}>

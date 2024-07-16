@@ -8,6 +8,8 @@
 }
 
 :root {
+  --border-radius: 8px;
+
   --primary-noto: "Noto Serif", serif;
   --secondary-poppins: "Poppins", sans-serif;
   --supporting-retro: "Chunky Retro";

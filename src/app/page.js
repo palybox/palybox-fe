@@ -114,7 +114,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={`${styles.section} ${styles.imageSect}`}>
+        <section className={`${styles.sectionImg}`}>
           <div className={styles.gallery}>
             <img src="/media/billboard.jpg"></img>
           </div>
@@ -183,7 +183,7 @@ export default function Home() {
           </div>
         </section>
         <section className={`${styles.section} ${styles.kitSection}`}>
-          <div className={styles.greenStarPosOne}>
+{/*           <div className={styles.greenStarPosOne}>
             <Image
               src="/media/7-green.svg"
               width={700}
@@ -198,7 +198,7 @@ export default function Home() {
               height={700}
               alt="Icon of a green wavy star"
             ></Image>
-          </div>
+          </div> */}
           <div className={styles.centeredDiv}>
             <div className={styles.kitHeading}>
               <div className={styles.fiveStarPos}>

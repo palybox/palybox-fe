@@ -27,8 +27,8 @@ export default function Home() {
               ></Image>
             </div>
           </div>
-          <h5 className={styles.h5}>Conciously curated cannabis</h5>
           <div className={styles.heroText}>
+            <h5 className={styles.h5}>Conciously curated cannabis</h5>
             <h3 className={styles.h3}>
               Reclaim control over your cannabis experience with our{" "}
               <span className={styles.highlight}>monthly</span> curated boxes.
@@ -114,12 +114,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={styles.section}>
-          <div className="">
-            <img src="/media/billboard.jpg" width="100%"></img>
+        <section className={`${styles.section} ${styles.imageSect}`}>
+          <div className={styles.gallery}>
+            <img src="/media/billboard.jpg"></img>
           </div>
         </section>
-        <section className={`${styles.section} ${styles.partnerSection}`}>
+        {/* <section className={`${styles.section} ${styles.partnerSection}`}>
           <div className={`${styles.partnerHeading} ${styles.centeredDiv}`}>
             <h2>
               <span className={styles.chunk}>Trusted</span> Partners
@@ -141,67 +141,44 @@ export default function Home() {
             </h3>
           </div>
           <div></div>
-        </section>
-        <section className={`${styles.section} ${styles.aboutSection}`}>
-          <div className={styles.aboutGrid}>
-            <div>placeholder for image</div>
-            <div className={styles.aboutBrand}>
-              <div
-                className={`${styles.subHeadingStripePurp} ${styles.paddingRight}`}
-              >
-                <h2>
-                  About the <span className={styles.empha}>Brand</span>
-                </h2>
-              </div>
-              <div>
-                <div className={styles.paddingRight}>
-                  <h3>Quality. Inclusivity. Education.</h3>
-                  <p>
-                    At Paly, we aim to provide an unparalleled cannabis
-                    experience by delivering top-tier products directly to your
-                    doorstep.
-                  </p>
-                  <p>
-                    <strong>
-                      We envision a future where quality cannabis is available,
-                      accessible, and enjoyed by all.
-                    </strong>
-                  </p>
-                </div>
-              </div>
+        </section> */}
+        <section className={`${styles.section} ${styles.about}`}>
+          <div>
+            <h2>We believe you deserve better.</h2>
+            <div>
+              <p>
+                Welcome to a world where quality, education, and inclusivity are
+                at the forefront of your cannabis experience.
+              </p>
+              <h2>why paly stands out.</h2>
+              <ol>
+                <li>
+                  Customer-Centric Service: Unlike many dispensaries, we
+                  prioritize your needs offering carefully curated products.
+                </li>
+                <li>
+                  Empowering Education: We provide accessible, comprehensive
+                  information about each product and brand, ensuring you make
+                  informed choices.
+                </li>
+                <li>
+                  Inclusive and Diverse: We support smaller, high-quality
+                  brands, breaking the mold of monopolistic competition to bring
+                  you the best variety.
+                </li>
+              </ol>
+              <p>
+                Imagine a subscription box that not only delivers premium
+                products but also empowers you with knowledge and supports
+                diverse, up-and-coming brands. With Paly, you become part of a
+                community that values quality, transparency, and inclusivity.
+              </p>
             </div>
-            <div className={styles.aboutFounder}>
-              <div
-                className={`${styles.subHeadingStripeLime} ${styles.paddingLeft}`}
-              >
-                <h2>
-                  About the <span className={styles.empha}>Founder</span>
-                </h2>
-              </div>
-              <div>
-                <div className={styles.paddingLeft}>
-                  <h3>Aja Palmino</h3>
-                  <p>
-                    Aja is a pioneer in the cannabis space with over a decade of
-                    experience in the industry.
-                  </p>
-                  <p>
-                    <strong>
-                      She is passionate about incorporating a more empathetic
-                      approach to cannabis so that there is a restored faith in
-                      the industry.
-                    </strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.ajaPort}>
-              <Image
-                src="/media/Aja Mask.png"
-                width={700}
-                height={700}
-                alt="Portrait of the founder, Aja Palomino"
-              ></Image>
+            <div>
+              <p>
+                Don&apos;t settle for less. Step into a world where your needs come
+                first. Transform your cannabis experience with Paly.
+              </p>
             </div>
           </div>
         </section>

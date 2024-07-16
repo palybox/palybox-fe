@@ -6,7 +6,6 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer>
-      <div className={styles.footer}>
         <div className={styles.footerGrid}>
           <div className={styles.footerLogo}>
             <Image src="/media/Logomark1.png" alt="palybox logo" width={800} height={800}></Image>
@@ -52,10 +51,9 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.footerHand}>
-              <Image src="/media/Hand.svg" alt="hang loose hand" width={500} height={500}></Image>
+              <img src="/media/Hand.svg" alt="hang loose hand" width={500} height={500}></img>
             </div>
         </div>
-      </div>
     </footer>
   );
 };

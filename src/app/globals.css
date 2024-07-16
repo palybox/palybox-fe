@@ -30,6 +30,8 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -39,4 +41,21 @@ a {
 
 h2 { 
   font-family: var(--secondary-poppins);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+footer {
+  position: relative;
+  background-color: var(--secondary-green);
+  color: white;
+  max-width: 100vw;
+  height: 80vh;
+  margin-bottom: 0%;
+  padding-top: 1.5rem;
+  overflow: hidden;
 }

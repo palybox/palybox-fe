@@ -1,5 +1,10 @@
 .paly {
   height: 200px;
+  transition: height 0.3s ease; 
+}
+
+.paly-shrink {
+  height: 100px;
 }
 
 .h2 {
@@ -128,7 +133,7 @@
 }
 
 .heroText {
-  margin-bottom: 10em;
+  margin-bottom: 5em;
 }
 
 .works {
@@ -209,7 +214,7 @@
 
 .about {
   position: relative;
-  padding: 10% 2em;
+  padding: 100px;
   z-index: 10;
 
   background-color: var(--primary-orange);
@@ -218,24 +223,69 @@
 
 .about h2 {
   font-family: var(--secondary-poppins);
-  font-weight: bold;
-  color: var(--secondary-green);
+  line-height: 1.1em;
   text-transform: uppercase;
   font-size: 3em;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-.empha {
-  font-weight: 500;
+.about h2 .chunk {
+  font-family: var(--supporting-retro);
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.about .intro p {
   font-style: italic;
 }
 
 .about h3 {
   font-family: var(--secondary-poppins);
-  text-transform: uppercase;
-  font-weight: bold;
   font-size: 1.5em;
-  padding-bottom: 2em;
   max-width: 100vw;
+  text-align: center;
+}
+
+.about p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about ul {
+  margin: 30px 0px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 0px;
+}
+
+.about ul li {
+  padding: 15%;
+  font-size: 16px;
+  line-height: 1.5;
+  border: white solid 1px;
+  border-radius: var(--border-radius);
+  list-style: none;
+  text-align: center;
+  justify-self: center;
+  align-items: center;
+
+  transition: transform 0.3s ease;
+}
+
+.about ul li:hover {
+  transform: translateY(-8px);
+}
+
+.about .vision {
+  padding: 2% 20% 0%;
+}
+
+.empha {
+  font-weight: 500;
+  font-style: italic;
 }
 
 .kitSection {
@@ -297,7 +347,15 @@
   overflow: hidden;
 }
 
+.subscribeContainer {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
 .formContainer {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1em;
@@ -334,6 +392,17 @@
   border: none;
   border-radius: var(--border-radius);
   cursor: pointer;
+
+  transition: background-color 0.3s ease;
+
+}
+
+.successMessage {
+  color: white;
+  text-align: center;
+  background-color: var(--secondary-green);
+  padding: 1em;
+  border-radius: var(--border-radius);
 }
 
 /* Change button color on hover */
@@ -374,6 +443,10 @@
   .paly {
     height: 100px;
   }
+  
+  .paly-shrink {
+    height: 50px;
+  }
 
   .h2 {
     font-size: 2.5rem;
@@ -394,7 +467,7 @@
 
   .heroText {
     margin-top: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 6em;
   }
 
   .heroText .h3 {
@@ -428,6 +501,19 @@
     width: 350px;
     height: 350px;
     overflow: hidden;
+  }
+
+  .about {
+    padding: 20px;
+  }
+
+  .about ul {
+    padding: 0px;
+    grid-template-columns: 1fr;
+  }
+
+  .about .vision {
+    padding: 0% 5% 0%;
   }
 
   .kitHeading {
@@ -482,24 +568,5 @@
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
   }
 }

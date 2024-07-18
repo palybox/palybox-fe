@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Subscribe from "@/components/Subcribe";
 
 export default function Home() {
   return (
@@ -34,25 +35,7 @@ export default function Home() {
           </h3>
         </div>
         <div className={styles.centeredDiv}>
-          <form className={styles.formContainer}>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Name"
-              className={styles.inputField}
-            />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              className={styles.inputField}
-            />
-            <button type="submit" className={styles.button}>
-              Subscribe
-            </button>
-          </form>
+          <Subscribe />
         </div>
       </section>
       <section className={`${styles.works}`}>
@@ -138,44 +121,39 @@ export default function Home() {
           <div></div>
         </section> */}
       <section className={styles.about}>
-        <div>
-          <h2>We believe you deserve better.</h2>
-          <div>
+          <h2>We believe you deserve better</h2>
+          <div className={styles.intro}>
             <p>
               Welcome to a world where quality, education, and inclusivity are
               at the forefront of your cannabis experience.
             </p>
-            <h2>why paly stands out.</h2>
-            <ol>
-              <li>
-                Customer-Centric Service: Unlike many dispensaries, we
-                prioritize your needs offering carefully curated products.
-              </li>
-              <li>
-                Empowering Education: We provide accessible, comprehensive
-                information about each product and brand, ensuring you make
-                informed choices.
-              </li>
-              <li>
-                Inclusive and Diverse: We support smaller, high-quality brands,
-                breaking the mold of monopolistic competition to bring you the
-                best variety.
-              </li>
-            </ol>
+          </div>
+
+          <h3>Why paly stands out</h3>
+          <ul>
+            <li>
+              <strong>Customer-Centric Service</strong>
+              <br></br><br></br>Unlike many dispensaries, we prioritize your needs
+              offering carefully curated products.
+            </li>
+            <li>
+              <strong>Empowering Education</strong>
+              <br></br><br></br>We provide accessible, comprehensive information about
+              each product and brand, ensuring you make informed choices.
+            </li>
+            <li>
+              <strong>Inclusive and Diverse</strong>
+              <br></br><br></br>We support smaller, high-quality brands, breaking the
+              mold of monopolistic competition to bring you the best variety.
+            </li>
+          </ul>
+          <div className={styles.vision}>
             <p>
-              Imagine a subscription box that not only delivers premium products
-              but also empowers you with knowledge and supports diverse,
-              up-and-coming brands. With Paly, you become part of a community
-              that values quality, transparency, and inclusivity.
+              Our vision is to empower people to live their best lives through
+              cannabis. Our monthly subscription boxes offer a variety of
+              products that cater to your preferences and needs.
             </p>
           </div>
-          <div>
-            <p>
-              Don&apos;t settle for less. Step into a world where your needs
-              come first. Transform your cannabis experience with Paly.
-            </p>
-          </div>
-        </div>
       </section>
       <section className={`${styles.kitSection}`}>
         <div className={styles.kitBg}>
@@ -223,25 +201,7 @@ export default function Home() {
           We want to get to know <span className={styles.highlight}>you!</span>
         </h3>
         <div className={`${styles.centeredDiv} ${styles.marginized}`}>
-          <form className={styles.formContainer}>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Name"
-              className={styles.inputField}
-            />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              className={styles.inputField}
-            />
-            <button type="submit" className={styles.button}>
-              Subscribe
-            </button>
-          </form>
+          <Subscribe />
         </div>
       </section>
       <Footer />
